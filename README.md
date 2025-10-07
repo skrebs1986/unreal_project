@@ -21,12 +21,22 @@
 
 ## 🚀 START HERE
 
-**If you haven't installed UE5 and Visual Studio yet:**
+**Choose your IDE:**
 
+### Option A: JetBrains Rider (Recommended ⭐)
+👉 **Follow: [SETUP_INSTRUCTIONS_RIDER.md](SETUP_INSTRUCTIONS_RIDER.md)** 👈
+- Faster, better IntelliSense
+- Native Unreal Engine support
+- Modern IDE experience
+
+### Option B: Visual Studio 2022
 👉 **Follow: [SETUP_INSTRUCTIONS.md](SETUP_INSTRUCTIONS.md)** 👈
+- Free and fully featured
+- Official Microsoft tooling
+- Good UE5 integration
 
-This guide will walk you through:
-1. Installing Visual Studio 2022 (free)
+**Both guides walk you through:**
+1. Installing your chosen IDE
 2. Installing Unreal Engine 5.4
 3. Creating the UE5 project
 4. Setting up Git LFS
@@ -63,7 +73,10 @@ All project documentation is in the `/Documentation/` folder:
 
 ### Software Needed
 - **Unreal Engine 5.4+** (via Epic Games Launcher)
-- **Visual Studio 2022 Community** (free) with C++ game development
+- **IDE - Choose one:**
+  - **JetBrains Rider** (recommended) - $149/year or free student license
+  - **Visual Studio 2022 Community** (free)
+- **Windows Build Tools** (required even with Rider)
 - **Git** with Git LFS
 - **Windows 10/11** 64-bit
 
@@ -109,8 +122,11 @@ FarmingSimulator/           (will be created by UE5)
 Use this to track your progress:
 
 ### Installation Phase
-- [ ] Install Visual Studio 2022 Community
-  - [ ] Game development with C++ workload
+- [ ] Choose IDE:
+  - [ ] **Option A:** JetBrains Rider + VS Build Tools
+  - [ ] **Option B:** Visual Studio 2022 Community (full IDE)
+- [ ] Install Windows Build Tools or Visual Studio
+  - [ ] Game development with C++ workload (or MSVC build tools)
   - [ ] Windows 10/11 SDK
 - [ ] Install Epic Games Launcher
 - [ ] Install Unreal Engine 5.4
@@ -132,9 +148,9 @@ Use this to track your progress:
 - [ ] Configure Git LFS
 
 ### Build Phase
-- [ ] Open FarmingSimulator.sln in Visual Studio
-- [ ] Build solution (Ctrl+Shift+B)
-- [ ] Launch editor (F5)
+- [ ] Open FarmingSimulator.sln in your IDE (Rider or VS)
+- [ ] Build solution (Ctrl+Shift+B or F6)
+- [ ] Launch editor (F5 or Shift+F10 in Rider)
 - [ ] Verify project opens successfully
 
 ### Ready to Develop! 🎉
@@ -146,10 +162,13 @@ Use this to track your progress:
 ## 🆘 Common Issues
 
 ### "Module could not be loaded"
-**Fix:** Rebuild the solution in Visual Studio
+**Fix:** Rebuild the solution in your IDE (Ctrl+Shift+B)
 
-### "Visual Studio not found"
-**Fix:** Install VS 2022 with C++ game development workload
+### "Build tools not found" (Rider users)
+**Fix:** Install Visual Studio Build Tools (see SETUP_INSTRUCTIONS_RIDER.md Step 2)
+
+### "Cannot compile - compiler not found"
+**Fix:** Install MSVC build tools via Visual Studio or VS Build Tools
 
 ### Build errors
 **Fix:** Make sure all files copied to correct locations
